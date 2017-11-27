@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<body>
+   <input type="button" id="btn" value="点击" />
+    <div id="hide" style="width:200px; height:200px; background-color:rebeccapurple;display:none">
+    </div>
+
+   <ul id="menu">
+    <li class="litem">
+        <a  href="#">体育明星</a>
+        <ul class="uitem">
+         <li>孙杨</li>
+          <li>孙杨</li>
+          <li>孙杨</li>
+          <li>孙杨</li>
+        </ul>
+    </li>
+        <li class="litem">
+            <a href="#">娱乐明细</a>
+            <ul class="uitem">
+                <li>孙杨</li>
+                <li>孙杨</li>
+                <li>孙杨</li>
+                <li>孙杨</li>
+            </ul>
+        </li>
+        <li class="litem">
+            <a href="#">军事明细</a>
+            <ul class="uitem">
+                <li>王宝强</li>
+                <li>王宝强</li>
+                <li>王宝强</li>
+                <li>王宝强</li>
+            </ul>
+        </li>
+    </ul>
+    <div id="dl" style="width:300px; height:300px; background:red; position:absolute"></div>
+</body>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            //$("#hide").hide(1000, function () {
+            //    alert("隐藏了");
+            //});
+            //$("#hide").show(1000, function () {
+            //    alert("显示");
+            //})
+            // $("#hide").toggle(1000);
+            $("#hide").fadeToggle(500);//切换显示
+        })
+        $(".uitem").hide();
+        $(".litem>a").click(function () {
+            $(this).next().toggle(100);
+            $(this).parent().siblings().find(".uitem").hide(1000);
+        })
+        $("#dl").click(function () {
+            $(this).animate({ "left": "100px", "top": "100px" }, 1000, function () {
+                $(this).animate({ "left": "200px", "top": "0px" }, 1000);
+
+            })
+        });
+    })
+</script>
