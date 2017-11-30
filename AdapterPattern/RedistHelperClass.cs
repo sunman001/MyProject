@@ -8,6 +8,8 @@ namespace AdapterPattern
 {
     /// <summary>
     /// 通过继承的方式可以重复使用 不可改变
+    /// 类识别器
+    /// 继承是强耦合 和父类绑死的 
     /// </summary>
     public class RedistHelperClass : RedisHelper, IHelper
     {

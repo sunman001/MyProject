@@ -14,7 +14,7 @@ namespace MyReflection.Controllers
         /// 桥接模式【变化封装】
         /// 那里变化就封装那里
         /// 解决多维度的变化
-        /// 缺点 ：把变化的逻辑交给了上方
+        /// 缺点 ：把变化的逻辑交给了上方。上端需要知道更多的细节
         /// </summary>
         /// <returns></returns>
         // GET: BridePattern
