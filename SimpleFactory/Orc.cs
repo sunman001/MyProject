@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /// <summary>
 /// 下端
 /// </summary>
-namespace SimpleFactory
+namespace DesignPattern.SimpleFactory
 {
     public class Orc:IRace
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleFactory
+namespace DesignPattern.SimpleFactory
 {
     /// <summary>
     /// 简单工厂

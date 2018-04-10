@@ -1,10 +1,11 @@
-﻿using SimpleFactory;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using static SimpleFactory.Factory;
+using DesignPattern.SimpleFactory;
+using static DesignPattern.SimpleFactory.Factory;
 
 namespace MyReflection.Controllers
 {
@@ -21,7 +22,7 @@ namespace MyReflection.Controllers
         // GET: SimpleFactory
         public ActionResult Index()
         {
-            //1、这种写法 上下端耦合 面向抽象
+            //1、这种写法 上下端耦合 面向细节           
             Human human = new Human();
             human.ShowKing();
             Orc orc = new Orc();
