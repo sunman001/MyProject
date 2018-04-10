@@ -5,7 +5,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DesignPattern.SimpleFactory;
+using SimpleFactory.getName;
 using static DesignPattern.SimpleFactory.Factory;
+
 
 namespace MyReflection.Controllers
 {
@@ -22,6 +24,12 @@ namespace MyReflection.Controllers
         // GET: SimpleFactory
         public ActionResult Index()
         {
+            ///前端可以输入 “fistname lastname”或者“lastname,firstname”
+            string name = "";//模拟前端输入的姓名
+            GetName getname = NameFactory.CreateNameFactory(name);
+            var firtName = getname.getFirstName();
+            var lastName = getname.getLastName();
+
             //1、这种写法 上下端耦合 面向细节           
             Human human = new Human();
             human.ShowKing();

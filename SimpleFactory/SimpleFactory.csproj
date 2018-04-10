@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory.cs" />
+    <Compile Include="getName\FirstFirst.cs" />
+    <Compile Include="getName\GetName.cs" />
+    <Compile Include="getName\LastFirst.cs" />
+    <Compile Include="getName\NameFactory.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="IRace.cs" />
     <Compile Include="Orc.cs" />
