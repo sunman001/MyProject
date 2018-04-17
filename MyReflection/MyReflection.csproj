@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AbstractFactoryController.cs" />
     <Compile Include="Controllers\AdapterController.cs" />
     <Compile Include="Controllers\AttributeController.cs" />
     <Compile Include="Controllers\BridePatternController.cs" />
@@ -217,6 +218,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AbstractFactory\" />
     <Folder Include="Views\FactoryMethod\" />
     <Folder Include="Views\IOCUnity\" />
     <Folder Include="Views\Proxy\" />
@@ -225,6 +227,10 @@
     <Folder Include="Views\YUXING\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\abstractFactory\AbstractFactory.csproj">
+      <Project>{240A0B77-BD7B-4CA3-9C93-153C7C743408}</Project>
+      <Name>AbstractFactory</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BridgePattern\BridgePattern.csproj">
       <Project>{7E2BE141-5A2B-4FDE-A128-CB8CA9FB3864}</Project>
       <Name>BridgePattern</Name>
@@ -297,7 +303,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>30096</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

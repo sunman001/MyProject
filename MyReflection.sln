@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPEncapsulation", "OOPEnca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPolymorphic", "OOPPolymorphic\OOPPolymorphic.csproj", "{095F9728-1F00-4571-A27C-1C037D060353}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "abstractFactory\AbstractFactory.csproj", "{240A0B77-BD7B-4CA3-9C93-153C7C743408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{095F9728-1F00-4571-A27C-1C037D060353}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{095F9728-1F00-4571-A27C-1C037D060353}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{095F9728-1F00-4571-A27C-1C037D060353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240A0B77-BD7B-4CA3-9C93-153C7C743408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240A0B77-BD7B-4CA3-9C93-153C7C743408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240A0B77-BD7B-4CA3-9C93-153C7C743408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240A0B77-BD7B-4CA3-9C93-153C7C743408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +206,7 @@ Global
 		{8E823616-976E-4714-886A-E78A83F37950} = {6B79956E-CB14-4BCC-86F4-3D6A4A6553DE}
 		{5B6306A6-957F-4B07-ADBD-F154C61DBDC8} = {6B79956E-CB14-4BCC-86F4-3D6A4A6553DE}
 		{095F9728-1F00-4571-A27C-1C037D060353} = {6B79956E-CB14-4BCC-86F4-3D6A4A6553DE}
+		{240A0B77-BD7B-4CA3-9C93-153C7C743408} = {91FE057B-E272-42E0-8A36-55FAB727E77F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30A72597-EFE1-4718-BA09-3543E0ABC345}

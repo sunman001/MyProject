@@ -9,7 +9,7 @@ namespace DesignPattern.SimpleFactory
 {
     /// <summary>
     /// 简单工厂
-    /// 缺点 代码增加、修改的时候还要修改工厂
+    /// 缺点 代码增加、修改的时候还要修改工厂,工厂内不稳定
     /// 严重违背单一职责
     /// </summary>
   public   class Factory

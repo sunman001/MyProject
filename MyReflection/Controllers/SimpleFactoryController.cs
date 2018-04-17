@@ -19,6 +19,7 @@ namespace MyReflection.Controllers
     {
         /// <summary>
         /// 简单工厂
+        /// 设计模式是为了解决一类的问题，不同的设计模式解决不同的问题
         /// </summary>
         /// <returns></returns>
         // GET: SimpleFactory
