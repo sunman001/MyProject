@@ -18,7 +18,8 @@ namespace DB.Sqlserver
         public T FindBy<T>(int id)
         {
             Type type = typeof(T);
-            string columns = string.Join(",", type.GetProperties().Select(p => string.Format("[{0}]",p.Name)));//获取所有的属性依逗号隔开
+           // string columns = string.Join(",", type.GetProperties().Select(p => string.Format("[{0}]",p.Name)));//获取所有的属性依逗号隔开
+            string columns = string.Join(",", type.GetProperties().Select(p=>$"[{p.Name}]"));
             T obj =(T)Activator.CreateInstance(type);//创建对象
             //var tType = obj.GetType();//获取当前实列的类型
             var PrimaryKey = AttributeExtention.GetPirkey<T>();//用特性和反射的方法获取主键

@@ -1,4 +1,5 @@
 ﻿using abstractFactory;
+using abstractFactory.operation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,20 @@ namespace MyReflection.Controllers
             ForzeThroneFactory factory = new ForzeThroneFactory();
             IRace huam = factory.CreateFirst();
             huam.ShowKing();
+            return View();
+        }
+
+        /// <summary>
+        /// 计算器
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Calculator()
+        {
+            Operation oper;
+            oper = OperationFactory.CreateOperate("+");
+            oper.NumberA = 1;
+            oper.NumberB = 2;
+            double result = oper.GetResult();
             return View();
         }
     }
